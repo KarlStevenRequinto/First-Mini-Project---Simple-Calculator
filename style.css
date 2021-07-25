@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right,black, yellow, red,blue,green,white,purple);
+}
+.calcbox {
+    display: grid;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+.operationbox {
+    grid-column: 1/-1;
+}
+.spantwo {
+    grid-column: span 2;
+}
+.resultbox {
+    background-color: aqua;
+}
+.inputbox {
+    background-color: blueviolet;
+}
